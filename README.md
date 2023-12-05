@@ -11,7 +11,7 @@ Then, calculate RT between them.
 Then, apply this RT to all of source points. We get a set of points here, calculate the distance between these set of points and target points.
 
 If error (mean distance) is smaller than 0.1 accept these points as transformedPoints and finish.
-If error, smaller than the best case (bestMeanError, which I started from 1000) accept these points as transformedPoints and try another set of combination.
+If error, smaller than the best case (bestMeanError, which I started from 1000) accept these points as transformedPoints, assign this to bestMeanError and try another set of combination.
 
 
 So, loop will finish if we find mean distance smaller than 0.1 or if we try all combinations (we will accept the one with smallest distance here).
